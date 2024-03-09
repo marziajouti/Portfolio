@@ -68,7 +68,7 @@ p {
 	color: white;
 }
 .brand h1 span {
-	color: crimson;
+	color: white;
 }
 
 /* Header section */
@@ -224,6 +224,7 @@ p {
 	justify-content: flex-start;
 }
 #hero h1 {
+	font-weight: normal;
 	display: block;
 	width: fit-content;
 	font-size: 4rem;
@@ -239,8 +240,10 @@ p {
 	animation-delay: 2s;
 }
 #hero h1:nth-child(3) {
+	
 	animation: text_reveal_name 0.5s ease forwards;
 	animation-delay: 3s;
+	
 }
 #hero h1 span {
 	position: absolute;
@@ -259,6 +262,7 @@ p {
 	animation-delay: 1.5s;
 }
 #hero h1:nth-child(3) span {
+	
 	animation-delay: 2.5s;
 }
 
@@ -559,9 +563,13 @@ p {
 	}
 }
 @keyframes text_reveal_name {
+	0% {
+		color: transparent;
+		font-weight: bold; 
+	}
 	100% {
-		color: crimson;
-		font-weight: 500;
+		color: white;
+		font-weight: bold;
 	}
 }
 /* End Keyframes */
@@ -699,5 +707,6 @@ p {
 		flex-basis: 22%;
 		margin: 1.5%;
 	}
+	
 }
 
